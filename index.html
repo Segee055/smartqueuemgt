@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Queue Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Smart Queue Management System</h1>
+  </header>
+
+  <main>
+    <!-- Now Serving -->
+    <section class="card">
+      <h2>Now Serving</h2>
+      <p id="now-serving" class="ticket-display">---</p>
+    </section>
+
+    <!-- Buttons -->
+    <section class="card">
+      <h2>Controls</h2>
+      <div class="buttons">
+        <button id="take-number-btn">Take a Number</button>
+        <button id="call-next-btn">Call Next</button>
+        <button id="skip-btn">Skip Customer</button>
+        <button id="reset-btn">Reset Queue</button>
+      </div>
+      <p id="message" class="message"></p>
+    </section>
+
+    <!-- Statistics -->
+    <section class="card">
+      <h2>Queue Statistics</h2>
+      <div class="stats">
+        <div class="stat">
+          <span id="waiting-count" class="stat-number">0</span>
+          <span class="stat-label">Waiting</span>
+        </div>
+        <div class="stat">
+          <span id="served-count" class="stat-number">0</span>
+          <span class="stat-label">Served</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Waiting list -->
+    <section class="card">
+      <h2>Waiting Queue</h2>
+      <ul id="waiting-list"></ul>
+      <p id="empty-message" class="empty">No customers are waiting. The queue is empty.</p>
+    </section>
+
+    <!-- Skipped list -->
+    <section class="card">
+      <h2>Skipped Customers</h2>
+      <ul id="skipped-list"></ul>
+      <p id="skipped-empty" class="empty">No customers have been skipped.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
